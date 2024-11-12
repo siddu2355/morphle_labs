@@ -1,12 +1,11 @@
 from django.http import HttpResponse
 from django.utils.timezone import datetime
-import os
 import pytz
 import subprocess
 
 def htop_view(request):
     name = "Siddu Sirasanambeti" 
-    username = os.getlogin() 
+    username = "siddu2355"
     ist = pytz.timezone('Asia/Kolkata')
     server_time = datetime.now(ist).strftime("%Y-%m-%d %H:%M:%S")
 
